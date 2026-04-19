@@ -48,7 +48,9 @@ export const Pagination: React.FC<PaginationProps> = ({
             href={`#${page}`}
             onClick={e => {
               e.preventDefault();
-              onPageChange(page);
+              if (page !== currentPage) {
+                onPageChange(page);
+              }
             }}
           >
             {page}
