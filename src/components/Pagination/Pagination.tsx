@@ -20,7 +20,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   }
 
   return (
-    <ul className="pagination">
+    <ul className="pagination" data-cy="pagination">
       <li className={cn('page-item', { disabled: currentPage === 1 })}>
         <a
           data-cy="prevLink"
